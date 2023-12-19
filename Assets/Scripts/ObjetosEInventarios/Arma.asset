@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64d00a38c3ede554796f7679297ba56a, type: 3}
+  m_Name: Arma
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 1347065148, guid: dc0a306dfb32cb542b3a4c23f53d84f6, type: 3}
+  nombre: espada
+  apilable: 0
+  descripcion: Espada basica
+  tipoDeEquipamiento: 2
+  salud: 5
+  ataque: 3
+  velocidad: 3
