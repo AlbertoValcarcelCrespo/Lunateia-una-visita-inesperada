@@ -5,7 +5,6 @@ using TMPro;
 
 public class PanelAtributos : MonoBehaviour
 {
-
     public static PanelAtributos instance;
 
     public TextMeshProUGUI txtNivel;
@@ -14,22 +13,51 @@ public class PanelAtributos : MonoBehaviour
     public TextMeshProUGUI txtAtaque;
     public TextMeshProUGUI txtVelocidad;
 
-
-    public void Start()
+    private void Awake()
     {
-        instance = this;
+        // Configura la instancia Singleton
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
     }
 
+    private void Start()
+    {
+        // Intenta obtener la referencia del jugador en Start
+        ActualizarReferenciasDelJugador();
+    }
 
+    private void ActualizarReferenciasDelJugador()
+    {
+        // Busca al jugador por etiqueta y obtén el componente PlayerController
+        GameObject jugador = GameObject.FindGameObjectWithTag("Player");
+        if (jugador != null)
+        {
+            PlayerController p = jugador.GetComponent<PlayerController>();
+            if (p != null)
+            {
+                // Si el jugador está presente y tiene un PlayerController, actualiza los atributos
+                ActualizarTextoAtributos(p.atributosJugador, p.salud, p.nivelDeExperiencia);
+            }
+        }
+    }
 
     public void ActualizarTextoAtributos(Atributos atributos, Salud salud, NivelDeExperiencia nivelDeExperiencia)
     {
-        txtNivel.text = nivelDeExperiencia.nivel.ToString();
-        txtExperiencia.text = nivelDeExperiencia.experiencia.ToString();
-        txtSalud.text = salud.salud.ToString();
-        txtAtaque.text = atributos.ataque.ToString();
-        txtVelocidad.text = atributos.velocidad.ToString();
-
-
+        // Verifica que las referencias no sean null antes de acceder a ellas
+        if (atributos != null && salud != null && nivelDeExperiencia != null)
+        {
+            txtNivel.text = nivelDeExperiencia.nivel.ToString();
+            txtExperiencia.text = nivelDeExperiencia.experiencia.ToString();
+            txtSalud.text = salud.salud.ToString();
+            txtAtaque.text = atributos.ataque.ToString();
+            txtVelocidad.text = atributos.velocidad.ToString();
+        }
     }
 }

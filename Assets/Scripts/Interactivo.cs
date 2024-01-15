@@ -12,12 +12,26 @@ public class Interactivo : MonoBehaviour//, IPointerDownHandler
     public UnityEvent OnInteraccion;
     protected PlayerController player;
 
+    void Awake()
+    {
+     //   player = GameManager.instance.jugador.GetComponent<PlayerController>();
+        miColisionador = GetComponent<BoxCollider2D>();
+        
+    }
 
     void Start()
     {
-        miColisionador = GetComponent<BoxCollider2D>();
-        player = GameManager.instance.jugador.GetComponent<PlayerController>();
-    }
+        // Intenta encontrar al jugador en Start en lugar de Awake.
+        if (GameManager.instance != null && GameManager.instance.jugador != null)
+        {
+            player = GameManager.instance.jugador.GetComponent<PlayerController>();
+        }
+        else
+        {
+            Debug.LogWarning("El jugador no se encontró en la escena.");
+        }
+    
+}
 
     //   private void OnTriggerEnter2D(Collider2D collision)
     //    {
@@ -40,14 +54,19 @@ public class Interactivo : MonoBehaviour//, IPointerDownHandler
 
     protected void Interactuar()
     {
-        foreach (RaycastHit2D interactivo in player.Interactuar())
+        RaycastHit2D[] interactuables = player?.Interactuar();
+        if (interactuables != null)
         {
-            if (interactivo.collider.gameObject == gameObject)
+            foreach (RaycastHit2D interactivo in interactuables)
             {
-                Interaccion();
+                if (interactivo.collider.gameObject == gameObject)
+                {
+                    Interaccion();
+                }
             }
         }
     }
+
 
 
     public virtual void Interaccion()

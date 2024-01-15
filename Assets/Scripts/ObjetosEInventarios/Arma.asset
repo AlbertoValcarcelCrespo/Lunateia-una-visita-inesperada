@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64d00a38c3ede554796f7679297ba56a, type: 3}
   m_Name: Arma
   m_EditorClassIdentifier: 
+  id: 4
   sprite: {fileID: 1347065148, guid: dc0a306dfb32cb542b3a4c23f53d84f6, type: 3}
   nombre: espada
   apilable: 0
   descripcion: Espada basica
+  cantidadStock: 0
+  estaEquipado: 1
   tipoDeEquipamiento: 2
   salud: 5
   ataque: 3

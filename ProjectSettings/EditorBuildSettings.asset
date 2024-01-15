@@ -6,11 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 58377275ef3265d4382b19f2952e0742
+  - enabled: 1
     path: Assets/Scenes/Casa_Xerdan.unity
     guid: 978be63ee9bb19745b9034ede95ad6a3
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Sotano.unity
+    guid: baf2e09f057bcf249a9dea1d3fb1a9bf
+  - enabled: 1
+    path: Assets/Scenes/Pueblo.unity
+    guid: 6c4f4666fc6eacf4797e61f2d32de5a2
+  - enabled: 1
+    path: Assets/Scenes/World_Map.unity
+    guid: e6a474bd636044a4f8df948375f058df
   - enabled: 1
     path: Assets/Scenes/Mazmorra_1.unity
     guid: 5827815eb5527414ab35030e133df421
@@ -21,12 +30,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Mazmorra_1-C.unity
     guid: b52761ce4eaf6534d8d51640e19d6416
   - enabled: 1
+    path: Assets/Scenes/Tienda.unity
+    guid: 7d88257e27ef11d40bb3b566e073ada4
+  - enabled: 1
+    path: Assets/Scenes/Casa1.unity
+    guid: 4abeea6a7af470443854376161b3fdfc
+  - enabled: 0
     path: Assets/Scenes/Nivel_2.unity
     guid: a6e3e18d5e501cc46ac631d2de44856a
-  - enabled: 1
-    path: Assets/Scenes/World_Map.unity
-    guid: e6a474bd636044a4f8df948375f058df
-  - enabled: 1
-    path: Assets/Scenes/Sotano.unity
-    guid: baf2e09f057bcf249a9dea1d3fb1a9bf
   m_configObjects: {}

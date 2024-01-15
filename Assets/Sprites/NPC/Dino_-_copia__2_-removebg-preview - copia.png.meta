@@ -1,0 +1,1367 @@
+fileFormatVersion: 2
+guid: 58770b11dcc837441832a8a16b29e688
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 341
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878d103505ae71043bf92b37496fd21e
+      internalID: 1006024523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 341
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6e221974b8bb743ae953f413b2c6f4
+      internalID: 279128252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 341
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b537a6201c89d9b4488a4e785aafe79c
+      internalID: 583217791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 341
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba02c2448511b64f9349fdae809a098
+      internalID: -1868874806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 310
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff33959201ad964fa078fc17e40a35b
+      internalID: -1949462951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 310
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22dffb3078708db438e544d8b1686b4f
+      internalID: -7092151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 310
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b894ecbaac53db4db892f51e32dd28d
+      internalID: -255241913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 310
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e724e62ae376ea745aa1e9f17fc9ac05
+      internalID: 101837390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 279
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad52197f40aea14891fccd73d36aacd
+      internalID: -810953868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 279
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb94368bc3b3d54f979b9b5a97424e0
+      internalID: 1383936852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 279
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c901528e90688a40b8aee3619f1c5d2
+      internalID: -1956309393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 279
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ecd95cb04d0084baa839228cd7feea
+      internalID: -1386738826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 279
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd411eb7a7c056d48af4744c2594a8ed
+      internalID: 1496244561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8adf933952f3c4c8feaad985516ff6
+      internalID: 1389628838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 248
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae861767d02cfd54c861b1f4f652953c
+      internalID: -1322399348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 248
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c47204ce3b41949868abdbe08ce67e
+      internalID: -522172571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 248
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce131939c49d0c94dad164736226c3d5
+      internalID: 1207656479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 248
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc42be2a37c28249b1536432e404506
+      internalID: 522441278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 217
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa41d35fa08b19a4e8cb9f260eeeaf0e
+      internalID: -2104788737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 217
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00abb53573c5e341ba67ecad69aa427
+      internalID: -375358134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 217
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb44f6f03af3e142a85264d05c58865
+      internalID: -746900455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 217
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f65873fa3292184e8fb96c7495d73c2
+      internalID: 332827312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 217
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb95711a8fea99f459af13298c565fb0
+      internalID: -1077154433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 186
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40177cd50eb5da74e8b281997243d7a1
+      internalID: -1395419675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_24
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 186
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d84aeacd0a0fa4f92bdc03715a7f12
+      internalID: -1898953498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 186
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a01b69c5999974cafa32ee82429b8a
+      internalID: -1362284018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 186
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456308394d8bfc94793ebfa83ffa9642
+      internalID: -1775495320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_27
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 186
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672de4a7cab01fc439b3ec27662147d2
+      internalID: 1277558147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 155
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aaf06a35634a6a44ab4df0cad456f62
+      internalID: 2057624123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_29
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 155
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c860ece7003c4b943a4c485036e5954b
+      internalID: -1550557600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_30
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 155
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6481a4bdecdc44ebdb8e22758191bd
+      internalID: -898649543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 155
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30a456f8015c7c45af61ac1737562a3
+      internalID: 1765050021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 124
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17cd0aba3c8a28a49999e22dff3b95b2
+      internalID: 609606156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 124
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13509988c1efc9d429af36eb6c80350e
+      internalID: -2057406411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 124
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d66bd87113d11489c97b62e4da08b6
+      internalID: -1875559238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 124
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f5fbf241b607142b798a277d530abb
+      internalID: 1163243612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 93
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef60aa3260dbb4d4a9a32ccd3da56fbb
+      internalID: -377846687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 93
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276af75ce30c24f4e83d7df44025765b
+      internalID: 76723174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 93
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeebe570916204c4c9fd0545b1b003ba
+      internalID: 1233249244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_39
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 93
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8aac6068dc61d499ce395720a9fc84
+      internalID: 95016360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_40
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 93
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9895ea3785217604888c05af654698ad
+      internalID: 1114305691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 62
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06183a029cda33747a3958a34460de98
+      internalID: -459017266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 62
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04fcf9adba7d0584d9a82e06d91ab8d5
+      internalID: -1234149417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_43
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 62
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80dc2c21fdad12543ac5c5126802bcae
+      internalID: -1596851250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_44
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 62
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18625740ec6696245bd51acb8df0920f
+      internalID: -1490336910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_45
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 62
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5ce64b0b1f93243bfa7e7d1cd7b778
+      internalID: -281905840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4143552c8a29564e82a5309f6736650
+      internalID: -898020637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_47
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 31
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc2b9a5481dc214f84a5cfb02958677
+      internalID: -1900571581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_48
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 31
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb1290c1a2df3f49a0d8cd15abe6d6b
+      internalID: 942527815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_49
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 31
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fddb3311717d7b45a941cd79d7683c2
+      internalID: 1910850679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_50
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 31
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792413114ecca194fad1b316637cc9a5
+      internalID: 1480747402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3b8baf905ce73429db3c1c2d90c848
+      internalID: -1196571421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_52
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e368286cd3f9e439bd2e1704d6cd39
+      internalID: 1342855694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_53
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaaa0f7ebd1ee50419411c83dab23a03
+      internalID: 754878709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_54
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebacd3545a06d1b44a1edf38a6bcc136
+      internalID: -1378785587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_-_copia__2_-removebg-preview - copia_55
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64.2
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e06779ce0272a4c8ac303ea05cd5bb
+      internalID: 1687223387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dino_-_copia__2_-removebg-preview - copia_0: 1006024523
+      Dino_-_copia__2_-removebg-preview - copia_1: 279128252
+      Dino_-_copia__2_-removebg-preview - copia_10: -1956309393
+      Dino_-_copia__2_-removebg-preview - copia_11: -1386738826
+      Dino_-_copia__2_-removebg-preview - copia_12: 1496244561
+      Dino_-_copia__2_-removebg-preview - copia_13: 1389628838
+      Dino_-_copia__2_-removebg-preview - copia_14: -1322399348
+      Dino_-_copia__2_-removebg-preview - copia_15: -522172571
+      Dino_-_copia__2_-removebg-preview - copia_16: 1207656479
+      Dino_-_copia__2_-removebg-preview - copia_17: 522441278
+      Dino_-_copia__2_-removebg-preview - copia_18: -2104788737
+      Dino_-_copia__2_-removebg-preview - copia_19: -375358134
+      Dino_-_copia__2_-removebg-preview - copia_2: 583217791
+      Dino_-_copia__2_-removebg-preview - copia_20: -746900455
+      Dino_-_copia__2_-removebg-preview - copia_21: 332827312
+      Dino_-_copia__2_-removebg-preview - copia_22: -1077154433
+      Dino_-_copia__2_-removebg-preview - copia_23: -1395419675
+      Dino_-_copia__2_-removebg-preview - copia_24: -1898953498
+      Dino_-_copia__2_-removebg-preview - copia_25: -1362284018
+      Dino_-_copia__2_-removebg-preview - copia_26: -1775495320
+      Dino_-_copia__2_-removebg-preview - copia_27: 1277558147
+      Dino_-_copia__2_-removebg-preview - copia_28: 2057624123
+      Dino_-_copia__2_-removebg-preview - copia_29: -1550557600
+      Dino_-_copia__2_-removebg-preview - copia_3: -1868874806
+      Dino_-_copia__2_-removebg-preview - copia_30: -898649543
+      Dino_-_copia__2_-removebg-preview - copia_31: 1765050021
+      Dino_-_copia__2_-removebg-preview - copia_32: 609606156
+      Dino_-_copia__2_-removebg-preview - copia_33: -2057406411
+      Dino_-_copia__2_-removebg-preview - copia_34: -1875559238
+      Dino_-_copia__2_-removebg-preview - copia_35: 1163243612
+      Dino_-_copia__2_-removebg-preview - copia_36: -377846687
+      Dino_-_copia__2_-removebg-preview - copia_37: 76723174
+      Dino_-_copia__2_-removebg-preview - copia_38: 1233249244
+      Dino_-_copia__2_-removebg-preview - copia_39: 95016360
+      Dino_-_copia__2_-removebg-preview - copia_4: -1949462951
+      Dino_-_copia__2_-removebg-preview - copia_40: 1114305691
+      Dino_-_copia__2_-removebg-preview - copia_41: -459017266
+      Dino_-_copia__2_-removebg-preview - copia_42: -1234149417
+      Dino_-_copia__2_-removebg-preview - copia_43: -1596851250
+      Dino_-_copia__2_-removebg-preview - copia_44: -1490336910
+      Dino_-_copia__2_-removebg-preview - copia_45: -281905840
+      Dino_-_copia__2_-removebg-preview - copia_46: -898020637
+      Dino_-_copia__2_-removebg-preview - copia_47: -1900571581
+      Dino_-_copia__2_-removebg-preview - copia_48: 942527815
+      Dino_-_copia__2_-removebg-preview - copia_49: 1910850679
+      Dino_-_copia__2_-removebg-preview - copia_5: -7092151
+      Dino_-_copia__2_-removebg-preview - copia_50: 1480747402
+      Dino_-_copia__2_-removebg-preview - copia_51: -1196571421
+      Dino_-_copia__2_-removebg-preview - copia_52: 1342855694
+      Dino_-_copia__2_-removebg-preview - copia_53: 754878709
+      Dino_-_copia__2_-removebg-preview - copia_54: -1378785587
+      Dino_-_copia__2_-removebg-preview - copia_55: 1687223387
+      Dino_-_copia__2_-removebg-preview - copia_6: -255241913
+      Dino_-_copia__2_-removebg-preview - copia_7: 101837390
+      Dino_-_copia__2_-removebg-preview - copia_8: -810953868
+      Dino_-_copia__2_-removebg-preview - copia_9: 1383936852
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

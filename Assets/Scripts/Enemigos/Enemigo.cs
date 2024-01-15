@@ -7,9 +7,21 @@ public class Enemigo : MonoBehaviour
     public Atributos atributos;
     public string nombre;
     public int experiencia;
+    public string id;
 
     public Atributos Atributos()
     {
         return atributos;
+    }
+
+    public void EntregarExperiencia()
+    {
+        GameManager.instance.jugador.GetComponent<NivelDeExperiencia>().experiencia += experiencia;
+    }
+
+    public void OnMuerte()
+    {
+        // Lógica de muerte del enemigo
+        GameManager.instance.gestorMisiones.EnemigoEliminado(id);
     }
 }

@@ -15,13 +15,27 @@ public class InputEnemigo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        direccionHaciaJugador = jugador.position - transform.position;
-        //  jugador = GameManager.instance.jugador.transform;
+        jugador = GameObject.FindGameObjectWithTag("Player")?.transform;
+
+        // Intenta encontrar al jugador si no está asignado
+        if (jugador == null)
+        {
+            jugador = GameObject.FindGameObjectWithTag("Player")?.transform;
+        }
+
+        // Si el jugador es encontrado, calcula la dirección inicial hacia él
+        if (jugador != null)
+        {
+            direccionHaciaJugador = jugador.position - transform.position;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        direccionHaciaJugador = jugador.position - transform.position;
+        if (jugador != null)
+        {
+            direccionHaciaJugador = jugador.position - transform.position;
+        }
     }
 }

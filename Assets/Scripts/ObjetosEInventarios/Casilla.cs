@@ -21,7 +21,7 @@ public class Casilla : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(itemAlmacenado == null)
+        if (itemAlmacenado == null)
         {
             image.enabled = false;
         }
@@ -63,7 +63,7 @@ public class Casilla : MonoBehaviour
         }
     }
 
-    protected void ResetearCasilla()
+    public void ResetearCasilla()
     {
         image.sprite = null;
         cantidadStock = 0;
@@ -76,7 +76,7 @@ public class Casilla : MonoBehaviour
     public void OnMouseDown()
     {
 
-       Debug.Log("Haciendo Click 55555");
+        Debug.Log("Haciendo Click 55555");
         UsarObjetoEnCasilla();
 
 

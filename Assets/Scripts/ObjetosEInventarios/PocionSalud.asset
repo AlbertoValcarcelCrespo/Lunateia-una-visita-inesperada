@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450119b172814a24da3271db945a240c, type: 3}
   m_Name: PocionSalud
   m_EditorClassIdentifier: 
+  id: 1
   sprite: {fileID: 1562105844, guid: efa4fcb588dccef45a49fc25f98c3727, type: 3}
   nombre: Pocion de Salud
   apilable: 0
   descripcion: Cura 100HP
+  cantidadStock: 0
+  estaEquipado: 0
   curacion: 100

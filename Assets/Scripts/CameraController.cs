@@ -31,12 +31,16 @@ public class CameraController : MonoBehaviour
          Camera.main.transform.position = nuevaPosicion;
      }
     */
+    //   public Transform target; // El objetivo que la cámara debe seguir
 
-    private CinemachineVirtualCamera cv;
+    public CinemachineVirtualCamera cv;
     public GameObject jugador;
-
+    public Transform jugadorT;
     public static CameraController instance;
     // Resto de las variables de la cámara
+
+
+
 
     void Awake()
     {
@@ -45,17 +49,48 @@ public class CameraController : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
-        else
+        else if (instance != this)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 
     private void Start()
     {
-        cv = GetComponent<CinemachineVirtualCamera>();
-        Transform jugador = GameManager.instance.jugador.transform;//GameObject.FindGameObjectWithTag("Player").transform;
-        cv.m_Follow = jugador;
+        //  EncontrarJugador();
+        jugador = GameObject.FindGameObjectWithTag("Player");
+        jugadorT = jugador.transform;
+        cv = GetComponentInChildren<CinemachineVirtualCamera>();
+        // CinemachineVirtualCamera cc = ;
+        //  cv.follow = jugador.transform;
+        //    cv.m_Follow.gameObject = GameObject.FindGameObjectWithTag("Player");
+        // cv = this;
+        cv.Follow = jugadorT;// GameManager.instance.jugador.transform;//jugador.transform;//GameObject.FindGameObjectWithTag("Player").transform;
+   //     Debug.Log("Datos Guardados" + cv);
+
+      //  cv.m_Follow = GameManager.instance.jugador.transform;//jugador.transform;//GameObject.FindGameObjectWithTag("Player").transform;
+       // ActualizarReferenciaJugador();
+    }
+    void Update()
+    {
+        //   {
+        // Opcionalmente, puedes revisar periódicamente si la referencia del jugador necesita ser actualizada
+        if (cv.Follow == null || cv.Follow.gameObject == null)
+        {
+            ActualizarReferenciaJugador();
+        }
     }
 
+    public void ActualizarReferenciaJugador()
+    {
+        GameObject jugador = GameObject.FindGameObjectWithTag("Player");
+        if (jugador != null)
+        {
+            cv.m_Follow = jugador.transform;
+            cv.Follow = jugador.transform;
+        }
+
+
+    }
 }
+

@@ -15,7 +15,7 @@ public class NivelDeExperiencia : MonoBehaviour
  //   private GeneradorTextHit generadorText;
  //   private Rango rangoTextoLevelUp = new Rango() { min = 0, max = 0 };
 
-    private int experienciaActual;
+    public int experienciaActual;
     private int expSiguienteNivel;
     private float razonExpNivelActual;
 
@@ -27,34 +27,26 @@ public class NivelDeExperiencia : MonoBehaviour
         set
         {
             experienciaActual = value;
-            if (nivel > 1)
-            {
-                razonExpNivelActual = (float)(experiencia - CurvaExperienciaAcumulativa(nivel)) / expSiguienteNivel;
-                {
-                    RevisarSiSubeDeNivel();
-                   // while (razonExpNivelActual >= 1)
-                  //  {
-                   //     LevelUp();
-                        //razonExpNivelActual = (float)(experiencia - CurvaExperienciaAcumulativa(nivel)) / expSiguienteNivel; // Actualizar razonExpNivelActual
-
-                   // }
-                }
-            }
-            else
-            {
-                razonExpNivelActual = (float)(experienciaActual) / expSiguienteNivel;
-                RevisarSiSubeDeNivel();
-                // while (razonExpNivelActual >= 1)
-              //  {
-                //    LevelUp();
-               // }
-            }
+            razonExpNivelActual = CalcularRazonExpNivelActual();
+            RevisarSiSubeDeNivel();
             ActualizarBarraExp();
             ActualizarPanelDeAtributos();
         }
       
     }
 
+
+    private float CalcularRazonExpNivelActual()
+    {
+        if (nivel > 1)
+        {
+            return (float)(experiencia - CurvaExperienciaAcumulativa(nivel)) / expSiguienteNivel;
+        }
+        else
+        {
+            return (float)experienciaActual / expSiguienteNivel;
+        }
+    }
 
     private void RevisarSiSubeDeNivel()
     {
@@ -65,18 +57,32 @@ public class NivelDeExperiencia : MonoBehaviour
     }
 
 
-    // Start is called before the first frame update
-    // void Start()
     void Awake()
+    {
+        nivel = 1;
+
+    }
+
+
+    // Start is called before the first frame update
+    void Start()
+   // void Awake()
     {
         nivel = 1;
 
         player = GetComponent<PlayerController>();
         salud = GetComponent<Salud>();
+        barraDeExp = CanvaPers.insta.barraDeExp;
 
         // generadorText = GetComponent<GeneradorTextHit>();
         expSiguienteNivel = CurvaExperiencia(nivel);
         ActualizarBarraExp();
+    }
+
+    void Update()
+    {
+        ActualizarBarraExp();
+
     }
 
     private int CurvaExperiencia(int nivel)
@@ -99,9 +105,12 @@ public class NivelDeExperiencia : MonoBehaviour
     private void LevelUp()
     {
         nivel++;
+        player.salud.ModificarSaludBase(10);
+        player.atributosJugador.AumentarAtaqueBase(1);
         ConfigurarSiguienteNivel();
         // generadorText.CrearTextoHit(generadorText.textoHit, "Nuevo Nivel", tranform, 0.4f, Color.cyan, rangoTextoLevelUp, rangoTextoLevelUp, 2f);
         razonExpNivelActual = (float)(experiencia - CurvaExperienciaAcumulativa(nivel)) / expSiguienteNivel;
+        ActualizarBarraExp();
     }
 
     void ConfigurarSiguienteNivel()
@@ -109,15 +118,27 @@ public class NivelDeExperiencia : MonoBehaviour
         expSiguienteNivel = CurvaExperiencia(nivel);
     }
 
-    void ActualizarBarraExp()
+    public void ActualizarBarraExp()
     {
-        barraDeExp.fillAmount = razonExpNivelActual;
+        if (barraDeExp)
+        {
+            // Calcular la proporción de la experiencia actual respecto a la experiencia necesaria para el siguiente nivel
+            barraDeExp.fillAmount = razonExpNivelActual;
+        }
     }
 
-    private void ActualizarPanelDeAtributos()
+    public void ActualizarPanelDeAtributos()
     {
         PanelAtributos.instance.ActualizarTextoAtributos(player.atributosJugador, salud, this);
     }
 
-
+    public void ReiniciarSExp()
+    {
+        nivel = 1;
+        experienciaActual = 0;// salud; // Restablece la salud actual al máximo
+                              //   SaludActual = salud;
+        barraDeExp.fillAmount = 0;
+        ActualizarPanelDeAtributos();
+        //ActualizarBarraSalud(); // Actualiza la barra de salud visualmente
+    }
 }

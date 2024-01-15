@@ -32,6 +32,11 @@ public class Atacante : MonoBehaviour
                 //objetoAtacado.GetComponent<Atacable>().RecibirAtaque();
                 objetoAtacado.GetComponent<Atacable>().RecibirAtaque(dano, direccionAtaque);
             }
+            if (objetoAtacado.GetComponent<AtacableE>())
+            {
+                //objetoAtacado.GetComponent<Atacable>().RecibirAtaque();
+                objetoAtacado.GetComponent<AtacableE>().RecibirAtaque(dano, direccionAtaque);
+            }
             //ataqueColliders[i].gameObject.GetComponent<Atacable>().RecibirAtaque(); 
 
         }

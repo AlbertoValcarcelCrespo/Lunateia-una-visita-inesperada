@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Entrance
   - RManager
+  - npc
+  - Audio
   layers:
   - Default
   - TransparentFX
@@ -16,9 +18,9 @@ TagManager:
   - 
   - Player
   - Interactivo
-  - 
-  - 
-  - 
+  - Minimapa
+  - Muerto
+  - Drop
   - 
   - 
   - 
@@ -66,4 +68,13 @@ TagManager:
     locked: 0
   - name: PlayerElementos
     uniqueID: 2571212889
+    locked: 0
+  - name: UI
+    uniqueID: 3676049411
+    locked: 0
+  - name: Drop
+    uniqueID: 3074744525
+    locked: 0
+  - name: Minimapa
+    uniqueID: 1262746965
     locked: 0

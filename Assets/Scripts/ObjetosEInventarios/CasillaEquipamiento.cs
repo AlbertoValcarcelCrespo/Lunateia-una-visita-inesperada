@@ -21,7 +21,7 @@ public class CasillaEquipamiento : Casilla
         {
             EliminarObjeto();
         }
-       
+
     }
 
     public override void EliminarObjeto()

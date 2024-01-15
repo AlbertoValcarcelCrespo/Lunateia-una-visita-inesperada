@@ -14,16 +14,22 @@ public class PanelMenu : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(instance);
+            canvasGroup = GetComponent<CanvasGroup>();
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
         }
     }
 
 
-    private void Start()
+  /*  private void Start()
     {
 
 
         canvasGroup = GetComponent<CanvasGroup>();
-    }
+    }*/
     
     public void AbrirCerrarInventario()
     {
