@@ -8,18 +8,10 @@ public class Objeto : Interactivo
 
     public Item item;
     private SpriteRenderer spriteRenderer;
-    // private BoxCollider2D boxCollider;
     public int cantidad = 1;
     public string itemId; // Identificador único para el objeto
     public bool recogido = false;
     public GameObject p;
-
-    // private void OnValidate()
-    //  {
-    //     spriteRenderer = GetComponent<SpriteRenderer>();
-    //     gameObject.name = item.nombre;
-    //     spriteRenderer.sprite = item.sprite;
-    // }
 
 
 
@@ -29,19 +21,15 @@ public class Objeto : Interactivo
     {
         PlayerPrefs.DeleteAll();
         PlayerPrefs.Save();
-        //CheckItemState();
         miColisionador = GetComponent<BoxCollider2D>();
-        // boxCollider = GetComponent<BoxCollider2D>();
-     //    player = GameManager.instance.jugador.GetComponent<PlayerController>();
+
         p = GameObject.FindGameObjectWithTag("Player");
         player = p.GetComponent<PlayerController>();
 
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        // spriteRenderer.sortingLayerID = 10;
         spriteRenderer.sortingLayerName = "Drop";
 
-        //spriteRenderer.sortingLayerID = "Drop";
         gameObject.name = item.nombre;
         spriteRenderer.sprite = item.sprite;
         miColisionador.isTrigger = true;
@@ -58,7 +46,6 @@ public class Objeto : Interactivo
         // Comprueba si el objeto ya ha sido recogido
         if (PlayerPrefs.GetInt(item.id, 0) == 1)
         {
-            // recogido = true;
             gameObject.SetActive(false); // Desactiva el objeto si ya fue recogido
         }
     }
@@ -77,7 +64,6 @@ public class Objeto : Interactivo
                  gameObject.SetActive(false);
             }
             gameObject.SetActive(false);
-            // Destroy(gameObject);
         }
 
     }

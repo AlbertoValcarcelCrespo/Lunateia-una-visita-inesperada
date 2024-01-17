@@ -21,7 +21,6 @@ public class Enemigo : MonoBehaviour
 
     public void OnMuerte()
     {
-        // Lógica de muerte del enemigo
         GameManager.instance.gestorMisiones.EnemigoEliminado(id);
     }
 }

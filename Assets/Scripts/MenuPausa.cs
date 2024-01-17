@@ -35,8 +35,6 @@ public class MenuPausa : MonoBehaviour
 
     void Start()
     {
-        // Inicializa el slider al valor actual del volumen
-
         volumeSlider.value = audioSource.volume;
     }
 
@@ -53,8 +51,6 @@ public class MenuPausa : MonoBehaviour
                 Pausar();
             }
         }
-        //volumeSlider.value = audioSource.volume;
-
     }
 
     public void Pausar()
@@ -73,7 +69,6 @@ public class MenuPausa : MonoBehaviour
     {
         SaveSystem.SavePlayer(PlayerController.instance);
         Inventario.instance.GuardarInventario();
-        // PanelEquipamiento.instance.GuardarEquipamiento();
         Debug.Log("Datos Guardados");
     }
 
@@ -86,11 +81,9 @@ public class MenuPausa : MonoBehaviour
     public void AjustarVolumen(float volumen)
     {
           audioSource.volume = volumen;
-       // volumeSlider.value = volumen;
     }
     public void Mute()
     {
-        //audioSource.mute = true;
         isMuted = !isMuted;
         AudioListener.volume = isMuted ? 0 : 1;
     }
@@ -104,10 +97,7 @@ public class MenuPausa : MonoBehaviour
 
     public void CerrarMenuOpciones()
     {
-        // Desactiva el panel del menú de opciones
         panelOpciones.SetActive(false);
-
-        // Reanudar el juego si está pausado
         Time.timeScale = 1f;
     }
 

@@ -18,8 +18,6 @@ public static class SaveSystem
         BinaryFormatter formatter = new BinaryFormatter();
         formatter.Serialize(stream, data);
         stream.Close();
-
-
     }
 
     public static PlayerData LoadPlayer()
@@ -37,12 +35,8 @@ public static class SaveSystem
             LastLoadedScene = data.scene;
 
             SceneManager.LoadScene(data.scene);
-            //Salud.ActualizarBarraSalud();
-
-
+  
             return data;
-
-
         }
         else
         {

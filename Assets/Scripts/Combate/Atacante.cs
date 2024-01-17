@@ -29,19 +29,13 @@ public class Atacante : MonoBehaviour
             objetoAtacado = ataqueColliders[i].gameObject;
             if (objetoAtacado.GetComponent<Atacable>())
             {
-                //objetoAtacado.GetComponent<Atacable>().RecibirAtaque();
                 objetoAtacado.GetComponent<Atacable>().RecibirAtaque(dano, direccionAtaque);
             }
             if (objetoAtacado.GetComponent<AtacableE>())
             {
-                //objetoAtacado.GetComponent<Atacable>().RecibirAtaque();
                 objetoAtacado.GetComponent<AtacableE>().RecibirAtaque(dano, direccionAtaque);
             }
-            //ataqueColliders[i].gameObject.GetComponent<Atacable>().RecibirAtaque(); 
-
         }
-        //Debug.DrawLine(transform.position, (Vector2)transform.position + vectorDesfaseAtaque, Color.yellow); 
-        //Debug.DrawLine(puntoA, puntoB, Color.red);
     }
 
     public void CrearHitBox(Vector2 direccionAtaque)

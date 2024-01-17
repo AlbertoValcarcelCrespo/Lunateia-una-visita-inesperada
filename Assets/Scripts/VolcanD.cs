@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class VolcanD : MonoBehaviour
 {
-
     public string sceneToLoad;
 
     public void OnTriggerEnter2D(Collider2D other)

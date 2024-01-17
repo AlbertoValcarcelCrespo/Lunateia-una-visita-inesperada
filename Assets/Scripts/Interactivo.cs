@@ -14,7 +14,6 @@ public class Interactivo : MonoBehaviour//, IPointerDownHandler
 
     void Awake()
     {
-     //   player = GameManager.instance.jugador.GetComponent<PlayerController>();
         miColisionador = GetComponent<BoxCollider2D>();
         
     }
@@ -29,14 +28,9 @@ public class Interactivo : MonoBehaviour//, IPointerDownHandler
         else
         {
             Debug.LogWarning("El jugador no se encontró en la escena.");
-        }
-    
+        }    
 }
 
-    //   private void OnTriggerEnter2D(Collider2D collision)
-    //    {
-    //       miGestorDeNiveles.CargarSiguienteNivel();
-    //    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -44,12 +38,9 @@ public class Interactivo : MonoBehaviour//, IPointerDownHandler
     }
 
     public void OnMouseDown()
-    {
-        
+    {      
         Debug.Log("Haciendo Click");
         Interactuar();
-        
-
     }
 
     protected void Interactuar()

@@ -33,8 +33,7 @@ public class InputPlayer : MonoBehaviour
         saltar = Input.GetButtonDown("Jump");
         interactuar = Input.GetButtonDown("Interactuar");
         inventario = Input.GetButtonDown("Inventario");
-        // interactuar = Input.GetButtonDown("interactuar");
-        // interactuar = Input.GetButtonDown("interactuar");
+
         //MOV
         ejeX = Input.GetAxis("Horizontal");
         ejeY = Input.GetAxis("Vertical");

@@ -47,7 +47,6 @@ public class Inventario : MonoBehaviour
 
     private void ActualizarUIInventario()
     {
-        // Asumiendo que tienes un método que devuelve todas las casillas de UI del inventario
         Casilla[] casillasUI = GetComponentsInChildren<Casilla>(true);
 
         // Desactiva todas las casillas primero
@@ -120,7 +119,6 @@ public class Inventario : MonoBehaviour
 
     public void RemoverObjeto(Item item)
     {
-        //  Debug.Log("ELementos"+ objetos);
         objetos.Remove(item);
     }
 
@@ -166,8 +164,6 @@ public class Inventario : MonoBehaviour
                 Item item = EncontrarOCrearItem(itemData);
                 if (item != null)
                 {
-                    // Debug.Log("Item encontrado2" + itemData.itemId);
-
                     item.cantidadStock = itemData.cantidad;
                     item.estaEquipado = false;
                     objetos.Add(item);
@@ -205,9 +201,7 @@ public class Inventario : MonoBehaviour
         destination.sprite = source.sprite;
         destination.descripcion = source.descripcion;
         destination.cantidadStock = source.cantidadStock;
-        // Si tienes propiedades específicas en subclases, tendrías que manejarlas aquí también
 
-        // Ejemplo para 'Equipamiento', que es una subclase de 'Item'
         if (source is Equipamiento sourceEquipamiento && destination is Equipamiento destinationEquipamiento)
         {
             // Copiar las propiedades específicas de Equipamiento
@@ -216,8 +210,6 @@ public class Inventario : MonoBehaviour
             destinationEquipamiento.velocidad = sourceEquipamiento.velocidad;
             destinationEquipamiento.tipoDeEquipamiento = sourceEquipamiento.tipoDeEquipamiento;
         }
-
-        // Continúa con otras subclases según sea necesario
     }
 
 

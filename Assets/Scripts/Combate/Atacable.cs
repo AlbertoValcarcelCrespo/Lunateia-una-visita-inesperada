@@ -21,7 +21,6 @@ public class Atacable : MonoBehaviour
 
     public void RecibirAtaque(int dano, Vector2 direccionDeAtaque)
     {
-        //miSalud.saludBase -= dano;
         miSalud.modificarSaludActual(-dano);
         miRigidBody.AddForce(direccionDeAtaque * dano * 100);
     }

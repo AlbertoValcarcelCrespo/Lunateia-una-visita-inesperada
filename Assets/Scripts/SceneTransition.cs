@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 public class SceneTransition : MonoBehaviour
 {
     public string sceneToLoad;
-    //private string sceneToReturn;
     public Vector3 spawnPoint;
 
 

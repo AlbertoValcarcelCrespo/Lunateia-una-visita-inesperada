@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
 {
 
     private InputPlayer inputJugador;
-    //  private Transform transformada;
 
     private float horizontal;
     private float vertical;
@@ -44,7 +43,6 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        //ReiniciarEstado();
     }
 
 
@@ -52,11 +50,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         salud = GetComponent<Salud>();
-        //ReiniciarEstado();
         nivelDeExperiencia = GetComponent<NivelDeExperiencia>();
-        //atributosJugador = GetComponent<Atributos>();
         inputJugador = GetComponent<InputPlayer>();
-        //  transformada = GetComponent<Transform>();
         miRigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
@@ -69,7 +64,6 @@ public class PlayerController : MonoBehaviour
         if (jugador != null)
         {
             jugador.GetComponent<Salud>().ReiniciarSalud();
-            // Restablecer otros estados del jugador si es necesario
         }
     }
 
@@ -94,8 +88,7 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetButtonDown("Atacar"))
             {
-                // atacante.Atacar(inputJugador.direccionMirada, atributosJugador.ataque);//(new Vector2(horizontal, vertical), atributosJugador.ataque);
-                animator.SetBool("Atacando", true);//Trigger("Atacar");
+                animator.SetBool("Atacando", true);
             }
 
             if (inputJugador.inventario)
@@ -108,22 +101,17 @@ public class PlayerController : MonoBehaviour
             {
                 SaveSystem.SavePlayer(this);
                 Inventario.instance.GuardarInventario();
-                // PanelEquipamiento.instance.GuardarEquipamiento();
                 Debug.Log("Datos Guardados");
             }
 
             if (Input.GetKeyDown(KeyCode.H))
             {
                 PlayerData playerData = SaveSystem.LoadPlayer();
-                //  salud = playerData.salud;
-                //  nivelDeExperiencia = playerData.level;
                 salud.SaludActual = playerData.vidaActual;
                 salud.ActualizarBarraSalud(); // Actualiza la barra de salud en la UI
                 nivelDeExperiencia.experienciaActual = playerData.experienciaActual;
                 nivelDeExperiencia.ActualizarBarraExp(); // Actualiza la barra de experiencia en la UI
-                                                         // nivelDeExperiencia.ActualizarPanelDeAtributos();
                 Inventario.instance.CargarInventario();
-                //  PanelEquipamiento.instance.CargarEquipamiento();
                 transform.position = new Vector3(playerData.position[0], playerData.position[1], playerData.position[2]);
                 GameManager.instance.gameOn();
                 Time.timeScale = 1f;
@@ -173,9 +161,8 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(segundos);
         SceneManager.LoadScene("MainMenu");
-        Time.timeScale = 0; // Detiene el tiempo una vez en el menú, si es necesario
+        Time.timeScale = 0; 
         Destroy(gameObject);
-
     }
 
     IEnumerator Dest(float segundos)
@@ -183,43 +170,25 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(segundos);
     }
 
-
-
       public void ReiniciarEstado()
       {
           GetComponent<Salud>().ReiniciarSalud();
-        //nivelDeExperiencia.nivel = 1;
-        //   nivelDeExperiencia.experiencia = 0;
-        //   nivelDeExperiencia.barraDeExp.fillAmount = 0;
         GetComponent<NivelDeExperiencia>().ReiniciarSExp();
-        Inventario.instance.ReiniciarInventario(); // Añade esta línea para reiniciar el inventario
+        Inventario.instance.ReiniciarInventario(); 
         PanelEquipamiento.instance.ReiniciarEquipamiento(); // Reiniciar el equipamiento
-
-        // nivelDeExperiencia.experiencia = 0;
-        // Reiniciar la experiencia
-
     }
-
-
 
     public void ConfigurarJugador(PlayerData data)
     {
         if (data != null)
         {
-            //   transform.position = new Vector3(data.position[0], data.position[1], data.position[2]);
-            //   salud.SaludActual = data.vidaActual;
-            //  nivelDeExperiencia.experienciaActual = data.experienciaActual;
-            // Aplica cualquier otro dato necesario
+
             PlayerData playerData = SaveSystem.LoadPlayer();
-            //  salud = playerData.salud;
-            //  nivelDeExperiencia = playerData.level;
             salud.SaludActual = playerData.vidaActual;
             salud.ActualizarBarraSalud(); // Actualiza la barra de salud en la UI
             nivelDeExperiencia.experienciaActual = playerData.experienciaActual;
             nivelDeExperiencia.ActualizarBarraExp(); // Actualiza la barra de experiencia en la UI
-                                                     // nivelDeExperiencia.ActualizarPanelDeAtributos();
             Inventario.instance.CargarInventario();
-            //  PanelEquipamiento.instance.CargarEquipamiento();
             transform.position = new Vector3(playerData.position[0], playerData.position[1], playerData.position[2]);
             Debug.Log("Datos Cargados");
         }

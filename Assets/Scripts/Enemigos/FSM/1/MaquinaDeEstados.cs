@@ -3,30 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-/*public class MaquinaDeEstados : MonoBehaviour
-{
-    public MonoBehaviour EstadoPatrulla;
-    public MonoBehaviour EstadoAlerta;
-    public MonoBehaviour EstadoPersecucion;
-    public MonoBehaviour EstadoInicial;
-
-    public MeshRenderer MeshRendererIndicador;
-
-    private MonoBehaviour estadoActual;
-
-    void Start()
-    {
-        ActivarEstado(EstadoInicial);
-    }
-
-    public void ActivarEstado(MonoBehaviour nuevoEstado)
-    {
-        if (estadoActual != null) estadoActual.enabled = false;
-        estadoActual = nuevoEstado;
-        estadoActual.enabled = true;
-    }
-
-}*/
 
 public class MaquinaDeEstados : Enemigo
 {
@@ -55,7 +31,6 @@ public class MaquinaDeEstados : Enemigo
         input = GetComponent<InputEnemigo>();
         atacante = GetComponent<Atacante>();
        
-       // navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 
         // Inicializa el estado de patrulla como estado inicial
         currentState = new EnemyPatrolState(this, animator, input, atacante, distanciaDeteccion, distanciaAtaque);
@@ -63,7 +38,6 @@ public class MaquinaDeEstados : Enemigo
 
     private void Update()
     {
-      //  transform.position += (Vector3)input.direccionHaciaJugador * atributos.velocidad * Time.deltaTime;
         currentState.UpdateState();
     }
 

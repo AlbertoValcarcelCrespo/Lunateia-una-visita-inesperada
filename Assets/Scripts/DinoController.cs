@@ -6,9 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class DinoController : MonoBehaviour
 {
-
     public static DinoController instance;
-
 
     public float speed = 9.0f;
     public float thresholdDistance = 0.5f;
@@ -19,7 +17,6 @@ public class DinoController : MonoBehaviour
     private int currentWaypointIndex = 0;
     private Animator animator;
 
-
     // Start is called before the first frame update
     void Awake()
     {
@@ -28,7 +25,6 @@ public class DinoController : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(this.gameObject);
             SceneManager.sceneLoaded += OnSceneLoaded;
-
         }
         else
         {
@@ -42,13 +38,10 @@ public class DinoController : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
         waypoints = new Vector3[4];
-      //  TeleportToPlayer(); // Teletransporta a Dino junto al jugador
-
     }
 
     void Update()
     {
-        // Intenta encontrar al jugador si aún no se ha asignado.
         if (player == null)
         {
             gameObject.SetActive(false); // Oculta a Dino
@@ -57,19 +50,14 @@ public class DinoController : MonoBehaviour
             if (playerGameObject != null)
             {
                 player = playerGameObject.transform;
-             //   TeleportToPlayer(); // Teletransporta a Dino junto al jugador
-
             }
         }
 
-        // Si el jugador ha sido encontrado, procede con la lógica de patrulla.
         if (player != null)
         {
             gameObject.SetActive(true);
             UpdateWaypoints(); // Actualiza constantemente los waypoints basándose en la posición del jugador
             Patrol();
-         //   TeleportToPlayer(); // Teletransporta a Dino junto al jugador
-
         }
     }
 
@@ -105,7 +93,6 @@ public class DinoController : MonoBehaviour
 
         if (Vector3.Distance(transform.position, targetWaypoint) < thresholdDistance)
         {
-            //    currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
             currentWaypointIndex = Random.Range(0, waypoints.Length);
 
         }

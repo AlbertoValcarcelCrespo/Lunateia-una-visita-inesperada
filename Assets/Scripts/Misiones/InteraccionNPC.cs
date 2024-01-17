@@ -28,10 +28,9 @@ public class InteraccionNPC : MonoBehaviour
     void Update()
     {
         // Comprobar si el jugador está en rango y ha presionado la tecla de interacción
-        if (estaEnRango && Input.GetButtonDown("Jump"))//Input.GetKeyDown(KeyCode.E)) // E es solo un ejemplo
+        if (estaEnRango && Input.GetButtonDown("Jump"))
         {
             Interactuar();
-           // Debug.Log("Misión completada: " + GameManager.instance.gestorMisiones.EncontrarMisionPorId(mision.id).estado);
         }
         if (GameManager.instance.gestorMisiones.EncontrarMisionPorId(misionParaActivar.id).estado == EstadoMision.Completada)
         {
@@ -45,10 +44,7 @@ public class InteraccionNPC : MonoBehaviour
         if (mision != null && !string.IsNullOrEmpty(mision.titulo) && mision.estado == EstadoMision.Disponible)
         {
             panelDialogo.SetActive(true);
-           // textoDialogo.text = "¿Quieres aceptar la misión " + mision.titulo + "?";
             textoDialogo.text = "¿Quieres aceptar la misión " + mision.titulo + "?\n(" + "Objetivo" + "):  " + mision.descripcion;
-
-            // El botón ahora maneja la lógica de aceptación
         }
         else if (mision.estado == EstadoMision.Activa && Input.GetKeyDown(KeyCode.E)) // E es solo un ejemplo
         {
@@ -80,21 +76,10 @@ public class InteraccionNPC : MonoBehaviour
         Debug.Log("AceptarMision ha sido llamado.");
         Debug.Log("0000000" + misionParaActivar.titulo + misionParaActivar.id);
 
-        // Activar la misión en el GestorMisiones
-        //   mision.estado = EstadoMision.Activa;
-        //    misionParaActivar.estado = EstadoMision.Activa;
-        // GameManager.instance.gestorMisiones.ActivarMision(mision);
-        // mision.estado = EstadoMision.Activa;
-
-        //  gestorMisiones.ActivarMision(mision);
-
-        //  if (mision.estado == EstadoMision.Disponible && misionParaActivar.objetivosEliminacion.Count >= 1)
-        // {
-        //   FindObjectOfType<GestorMisiones>().ActivarMision(mision);
         GameManager.instance.gestorMisiones.ActivarMision(misionParaActivar);
         mision.estado = EstadoMision.Activa;
         misionParaActivar.estado = EstadoMision.Activa;
-       // }
+ 
         panelDialogo.SetActive(false); // Ocultar el diálogo
 
     }
@@ -109,8 +94,6 @@ public class InteraccionNPC : MonoBehaviour
         {
             estaEnRango = true;
             dialogueMark.SetActive(true);
-
-            // Opcional: Mostrar indicador de que el jugador puede interactuar
         }
     }
 

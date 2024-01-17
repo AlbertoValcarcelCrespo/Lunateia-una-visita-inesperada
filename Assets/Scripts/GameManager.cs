@@ -7,10 +7,8 @@ public class GameManager : MonoBehaviour
     public Transform playerSpawnPoint;
     public GameObject jugador;
     public string playerTag;
-   // private static GameManager _instance;
-    public static GameManager instance { get; private set; }// { return instance; } }
+    public static GameManager instance { get; private set; }
     public GestorMisiones gestorMisiones;
-
 
     public GameObject gameOverUI;
 
@@ -20,22 +18,18 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(this.gameObject);
-
         }
         else
         {
             Destroy(this.gameObject);
         }
         jugador = GameObject.FindGameObjectWithTag("Player");
-
     }
 
     // Start is called before the first frame update
     void Start()
     {
         gestorMisiones =  GetComponent<GestorMisiones>(); 
-        // instance = this;
-      //  jugador = GameObject.FindGameObjectWithTag("Player");
         jugador.transform.position = playerSpawnPoint.position;
     }
 

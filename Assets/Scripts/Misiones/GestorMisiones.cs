@@ -7,8 +7,6 @@ using System.IO;
 public class GestorMisiones : MonoBehaviour
 {
     public List<Mision> misiones;
-  //  [SerializeField] public InteraccionNPC npc;
-
 
     // Método para llamar cuando un objeto es recolectado.
     public void RecolectarItem(Item item)
@@ -42,7 +40,7 @@ public class GestorMisiones : MonoBehaviour
                     objetivo.EnemigoEliminado(enemigoId);
                 }
 
-                if ((mision.VerificarObjetivosCompletosE())) //&& (npc.misionParaActivar.objetivos[0].GetObjetivoMision() == TipoObjetivoMision.Eliminacion))
+                if ((mision.VerificarObjetivosCompletosE())) 
                 {
                     CompletarMision(mision);
                 }
@@ -53,22 +51,9 @@ public class GestorMisiones : MonoBehaviour
     // Método para activar una misión
     public void ActivarMision(Mision misionParaActivar)
     {
- //       Debug.Log("Activando misión en el gestor de misiones...");
-
-        //  Mision mision = EncontrarMisionPorId(misionParaActivar.id);//
         Mision mision = misiones.Find(m => m.id == misionParaActivar.id);
-     //   Debug.Log("11111Misión activada: " + mision.titulo + mision.id);
-        //  if (misionParaActivar != null)
-        //   {
-        mision.ActivarMision();
-         //   Debug.Log("11111Misión activada: " + mision.titulo + mision.id + misiones.Count);
-    //        Debug.Log("22222Misión activada: " + mision.titulo + mision.id + misionParaActivar.titulo + misionParaActivar.id);
 
-     //   }
-     //   else
-    //    {
-     //       Debug.LogError("Misión no encontrada con ID: " + misionParaActivar.id);
-      //  }
+        mision.ActivarMision();
     }
 
     // Método para verificar y actualizar el estado de las misiones
@@ -87,13 +72,11 @@ public class GestorMisiones : MonoBehaviour
     private void CompletarMision(Mision mision)
     {
         mision.estado = EstadoMision.Completada;
- //       Debug.Log("Misión completada: " + mision.titulo);
         InteraccionNPC npc = FindObjectOfType<InteraccionNPC>();
 
-           npc.mision.estado = EstadoMision.Completada;
-           npc.misionParaActivar.estado = EstadoMision.Completada;
+        npc.mision.estado = EstadoMision.Completada;
+        npc.misionParaActivar.estado = EstadoMision.Completada;
         OtorgarRecompensa(mision.recompensa);
-        // Código adicional para manejar la misión completada
     }
 
     private void OtorgarRecompensa(Recompensa recompensa)
@@ -113,7 +96,7 @@ public class GestorMisiones : MonoBehaviour
             // Otorgar ítems, si los hay en la recompensa
             //   foreach (var item in recompensa.items)
             //   {
-            //       jugador.Inventario.AgregarObjeto(item, 1); // Asume una función para agregar ítems al inventario
+            //       jugador.Inventario.AgregarObjeto(item, 1);
             //   }
 
         }
@@ -170,7 +153,6 @@ public class GestorMisiones : MonoBehaviour
     public Mision EncontrarMisionPorId(string id)
     {
           int numero = int.Parse(id);
-        //return misiones.FirstOrDefault(m => m.id == id);// && m.estado == EstadoMision.Activa);
        return misiones[numero-1];
     }
 

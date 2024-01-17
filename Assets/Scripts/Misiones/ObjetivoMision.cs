@@ -38,7 +38,6 @@ public class ObjetivoMision
     {
         completado = true;
         Debug.Log(descripcion + " completado.");
-        // Código adicional para manejar la finalización del objetivo
     }
 
 

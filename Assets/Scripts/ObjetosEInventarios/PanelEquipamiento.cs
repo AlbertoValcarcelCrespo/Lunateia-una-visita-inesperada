@@ -41,7 +41,6 @@ public class PanelEquipamiento : MonoBehaviour
 
     private void ActualizarUIEquipamiento()
     {
-        // Asumiendo que tienes un método que devuelve todas las casillas de equipamiento de UI
         CasillaEquipamiento[] casillasEquipamientoUI = GetComponentsInChildren<CasillaEquipamiento>(true);
 
         // Resetea todas las casillas de equipamiento
@@ -77,8 +76,6 @@ public class PanelEquipamiento : MonoBehaviour
                     Debug.Log("Casilla vacia");
                     AgregarEquipo(equipamiento, casillaEquipo);
                     equipamiento.estaEquipado = true; // Marcar como equipado
-                                                      //  PanelAtributos.instance.ActualizarTextoAtributos(atributos, GameManager.instance.jugador.salud, GameManager.instance.jugador.nivelDeExperiencia);
-                                                      // PanelAtributos.instance.ActualizarTextoAtributos(atributos, PlayerController.instance.salud, PlayerController.instance.nivelDeExperiencia);
 
                     return null;
                 }
@@ -86,12 +83,10 @@ public class PanelEquipamiento : MonoBehaviour
                 {
                     Equipamiento objetoEquipado = casillaEquipo.itemAlmacenado as Equipamiento;
                     AgregarEquipo(equipamiento, casillaEquipo);
-                    // PanelAtributos.instance.ActualizarTextoAtributos(atributos, PlayerController.instance.salud, PlayerController.instance.nivelDeExperiencia);
 
                     return objetoEquipado;
                 }
             }
-           // PanelAtributos.instance.ActualizarTextoAtributos(atributos, PlayerController.instance.salud, PlayerController.instance.nivelDeExperiencia);
 
         }
         return null;
@@ -103,7 +98,6 @@ public class PanelEquipamiento : MonoBehaviour
         equipamientos.Add(equipamiento);
         equipamiento.estaEquipado = true; // Marcar como equipado
         Inventario.instance.RemoverObjeto(equipamiento);
-        //Atributos ActualizarEquipamiento()
         atributos.ActualizarEquipamiento(equipamientos);
     }
 
@@ -111,8 +105,6 @@ public class PanelEquipamiento : MonoBehaviour
     {
         equipamientos.Remove(equipamiento);
         equipamiento.estaEquipado = false; // Marcar como no equipado
-        //Atributos ActualizarEquipamiento()
-        //Inventario.instance.AgregarObjeto(equipamiento, 1);
         atributos.ActualizarEquipamiento(equipamientos);
     }
 
@@ -122,7 +114,7 @@ public class PanelEquipamiento : MonoBehaviour
         equipamientos.Clear(); // Limpia la lista de equipamientos
         foreach (CasillaEquipamiento casilla in casillaEquipamientos)
         {
-            casilla.ResetearCasilla(); // Asumiendo que tienes un método para resetear la casilla de equipamiento
+            casilla.ResetearCasilla(); 
         }
         ActualizarUIEquipamiento(); // Actualiza la UI de equipamiento
     }

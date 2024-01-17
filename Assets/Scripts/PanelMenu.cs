@@ -22,14 +22,6 @@ public class PanelMenu : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-
-  /*  private void Start()
-    {
-
-
-        canvasGroup = GetComponent<CanvasGroup>();
-    }*/
     
     public void AbrirCerrarInventario()
     {

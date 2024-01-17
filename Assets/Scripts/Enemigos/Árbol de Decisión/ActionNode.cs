@@ -16,6 +16,6 @@ public class ActionNode : DecisionNode
     public override DecisionNode MakeDecision()
     {
         action();
-        return this; // Mantener el mismo nodo, ya que es un nodo de acción
+        return this; 
     }
 }

@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-//[RequireComponent(typeof(GeneradorTextHit))]
 public class NivelDeExperiencia : MonoBehaviour
 {
     private PlayerController player;
@@ -12,9 +11,6 @@ public class NivelDeExperiencia : MonoBehaviour
 
     public Image barraDeExp;
     
- //   private GeneradorTextHit generadorText;
- //   private Rango rangoTextoLevelUp = new Rango() { min = 0, max = 0 };
-
     public int experienciaActual;
     private int expSiguienteNivel;
     private float razonExpNivelActual;
@@ -31,8 +27,7 @@ public class NivelDeExperiencia : MonoBehaviour
             RevisarSiSubeDeNivel();
             ActualizarBarraExp();
             ActualizarPanelDeAtributos();
-        }
-      
+        }     
     }
 
 
@@ -66,15 +61,12 @@ public class NivelDeExperiencia : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-   // void Awake()
     {
         nivel = 1;
 
         player = GetComponent<PlayerController>();
         salud = GetComponent<Salud>();
         barraDeExp = CanvaPers.insta.barraDeExp;
-
-        // generadorText = GetComponent<GeneradorTextHit>();
         expSiguienteNivel = CurvaExperiencia(nivel);
         ActualizarBarraExp();
     }
@@ -108,7 +100,6 @@ public class NivelDeExperiencia : MonoBehaviour
         player.salud.ModificarSaludBase(10);
         player.atributosJugador.AumentarAtaqueBase(1);
         ConfigurarSiguienteNivel();
-        // generadorText.CrearTextoHit(generadorText.textoHit, "Nuevo Nivel", tranform, 0.4f, Color.cyan, rangoTextoLevelUp, rangoTextoLevelUp, 2f);
         razonExpNivelActual = (float)(experiencia - CurvaExperienciaAcumulativa(nivel)) / expSiguienteNivel;
         ActualizarBarraExp();
     }
@@ -135,10 +126,8 @@ public class NivelDeExperiencia : MonoBehaviour
     public void ReiniciarSExp()
     {
         nivel = 1;
-        experienciaActual = 0;// salud; // Restablece la salud actual al máximo
-                              //   SaludActual = salud;
+        experienciaActual = 0;
         barraDeExp.fillAmount = 0;
         ActualizarPanelDeAtributos();
-        //ActualizarBarraSalud(); // Actualiza la barra de salud visualmente
     }
 }

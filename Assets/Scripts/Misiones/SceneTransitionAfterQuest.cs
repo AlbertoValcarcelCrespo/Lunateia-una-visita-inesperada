@@ -11,8 +11,6 @@ public class SceneTransitionAfterQuest : MonoBehaviour
    [SerializeField] public InteraccionNPC npc;
     [SerializeField] public string id;
 
-    //  public Mision misionRequerida; // Referencia a la misión que debe completarse
-
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !other.isTrigger && MisionCompletada())
@@ -27,8 +25,6 @@ public class SceneTransitionAfterQuest : MonoBehaviour
     {
         InteraccionNPC npc = GameObject.FindGameObjectWithTag("npc").GetComponent<InteraccionNPC>(); ;
 
-        //return //(npc.misionParaActivar.estado == EstadoMision.Completada);
         return GameManager.instance.gestorMisiones.EncontrarMisionPorId(id).estado == EstadoMision.Completada ;
-        //return misionRequerida != null && misionRequerida.estado == EstadoMision.Completada;
     }
 }

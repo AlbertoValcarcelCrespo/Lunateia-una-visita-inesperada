@@ -14,10 +14,6 @@ public class EnemyChaseState : BaseState
     public override void EnterState()
     {
        animator.SetBool("Caminando", true);
-    //    maquinaDeEstados.TransitionToState(new EnemyChaseState(maquinaDeEstados, animator, input, atacante, distanciaDeteccion, distanciaAtaque));
-
-        
-      //  transform.position += (Vector3)input.direccionHaciaJugador * maquinaDeEstados.atributos.velocidad * Time.deltaTime;
 
     }
 
@@ -43,6 +39,5 @@ public class EnemyChaseState : BaseState
     public override void ExitState()
     {
         animator.SetBool("Caminando", false);
-        //this.UpdateState();
     }
 }

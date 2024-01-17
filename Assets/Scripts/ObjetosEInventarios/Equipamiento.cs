@@ -14,7 +14,6 @@ public class Equipamiento : Item
     public int salud;
     public int ataque;
     public int velocidad;
-   // public int id;
 
     public override bool UsarItem()
     {
@@ -22,8 +21,6 @@ public class Equipamiento : Item
         if (equipamientoActualmenteEquipado)
         {
             PanelEquipamiento.instance.RemoverEquipo(equipamientoActualmenteEquipado);
-
-            //  Inventario.instance.AgregarObjeto(equipamientoActualmenteEquipado, 1);
         }
 
         return true;

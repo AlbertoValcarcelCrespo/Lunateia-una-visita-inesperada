@@ -33,26 +33,16 @@ public class EnemyPatrolState : BaseState
         agent.destination += WayPoints[siguienteWayPoint].position;
         agent.destination = WayPoints[siguienteWayPoint].position;
         agent.SetDestination(WayPoints[siguienteWayPoint].position);
-        //siguienteWayPoint = 0;
         siguienteWayPoint = (siguienteWayPoint + 1) % WayPoints.Length;
         ActualizarWayPointDestino();
 
-        // animator.SetFloat("X", horizontal);
-        // animator.SetFloat("Y", vertical);
     }
 
     public override void UpdateState()
     {
         siguienteWayPoint = (siguienteWayPoint + 1) % WayPoints.Length;
         ActualizarWayPointDestino();
-        //  animator.SetFloat("X", horizontal);
-        //  animator.SetFloat("Y", vertical);
 
-        //  controladorNavMesh.ActualizarWayPointDestino();
-        // controladorNavMesh.ActualizarPuntoDestinoNavMeshAgent();
-     //   Vector2 destino = WayPoints[siguienteWayPoint].position;
-     //   Vector2 nuevaPosicion = Vector2.MoveTowards(transform.position, destino, 5f * Time.deltaTime);
-     //   transform.position = nuevaPosicion;
         agent.destination += (Vector3)WayPoints[siguienteWayPoint].position * Time.deltaTime;
         agent.destination += WayPoints[siguienteWayPoint].position;
         agent.SetDestination(WayPoints[siguienteWayPoint].position);
@@ -70,13 +60,11 @@ public class EnemyPatrolState : BaseState
         }
         else if (controladorNavMesh.HemosLlegado())
         {
-          //  siguienteWayPoint = (siguienteWayPoint + 1) % WayPoints.Length;
             ActualizarWayPointDestino();
         }
         else
         {
             maquinaDeEstados.MoverHaciaJugador();
-           // controladorNavMesh.perseguirObjectivo = maquinaDeEstados.MoverHaciaJugador();
         }
     }
 
@@ -88,7 +76,6 @@ public class EnemyPatrolState : BaseState
 
     void OnEnable()
     {
-      //  maquinaDeEstados.MeshRendererIndicador.material.color = ColorEstado;
         ActualizarWayPointDestino();
     }
 
@@ -99,17 +86,5 @@ public class EnemyPatrolState : BaseState
 
         transform.position += (Vector3)WayPoints[siguienteWayPoint].position  * Time.deltaTime;
     }
-
-/*
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.transform == WayPoints[siguienteWayPoint])
-        {
-            Debug.Log("Llegó al WayPoint: " + siguienteWayPoint);
-            llegoAlWayPoint = true;
-        }
-    }
-*/
-
 
 }

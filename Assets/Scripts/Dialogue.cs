@@ -83,7 +83,6 @@ public class Dialogue : MonoBehaviour
         {
             isPlayerInRange = true;
             dialogueMark.SetActive(true); 
-         //   Debug.Log("SI");
         }
         
     }
@@ -94,7 +93,6 @@ public class Dialogue : MonoBehaviour
         {
             isPlayerInRange = false;
             dialogueMark.SetActive(false);
-       //     Debug.Log("NO");
         }
     }
 

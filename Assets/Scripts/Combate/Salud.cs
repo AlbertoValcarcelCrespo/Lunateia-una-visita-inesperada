@@ -8,7 +8,6 @@ public class Salud : MonoBehaviour
 {
     public int saludBase;
     private int saludActual;
-  //  public Transform barraSalud;
     public Image barraSalud;
     public UnityEvent OnMorir;
 
@@ -39,7 +38,6 @@ public class Salud : MonoBehaviour
                 {
                     OnMorir.Invoke();
                 }
-               // Destroy(gameObject);
             }
         }
     }
@@ -68,8 +66,6 @@ public class Salud : MonoBehaviour
 
     public void ActualizarBarraSalud()
     {
-        // Vector3 escala = new Vector3((float)SaludActual / saludBase, 1, 1);
-        // barraSalud.localScale = escala;
         if (barraSalud)
         {
             barraSalud.fillAmount = (float)SaludActual / salud;
@@ -85,10 +81,8 @@ public class Salud : MonoBehaviour
 
     public void ReiniciarSalud()
     {
-        SaludActual = saludBase;// salud; // Restablece la salud actual al máximo
-                                //   SaludActual = salud;
+        SaludActual = saludBase;
         barraSalud.fillAmount = 1;
-        //ActualizarBarraSalud(); // Actualiza la barra de salud visualmente
     }
 
 

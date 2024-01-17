@@ -7,5 +7,4 @@ public class Recompensa
 {
     public int experiencia;
     public int oro;
-    // Puedes agregar más recompensas como items, etc.
 }

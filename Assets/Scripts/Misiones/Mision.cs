@@ -43,14 +43,7 @@ public class Mision
     // Método para activar la misión
      public void ActivarMision()
       {
-          // if(GameManager.instance.gestorMisiones.EncontrarMisionPorId(this.id) == InteraccionNPC.instance.mision)
-          //  {
-          //      estado = EstadoMision.Activa;
 
-          //  }
-          // estado = EstadoMision.Activa;
-
-        //  if (GameManager.instance.gestorMisiones.npc.misionParaActivar.objetivos[0].GetObjetivoMision() == TipoObjetivoMision.Recoleccion && GameManager.instance.gestorMisiones.npc.misionParaActivar.objetivosRecoleccion.Count >=1)//(objetivosRecoleccion != null && objetivos[0].GetObjetivoMision() == TipoObjetivoMision.Recoleccion)
              if (objetivos[0].GetObjetivoMision() == TipoObjetivoMision.Recoleccion && objetivos.Count >=1)
           {
               foreach (var objetivo in objetivosRecoleccion)
@@ -59,7 +52,7 @@ public class Mision
                   estado = EstadoMision.Activa;
               }
           }
-          else // (objetivos[0].GetObjetivoMision() == TipoObjetivoMision.Eliminacion && objetivos.Count >= 1)//(objetivosEliminacion != null && objetivos[0].GetObjetivoMision() == TipoObjetivoMision.Eliminacion)
+          else 
           {
               foreach (var objetivo in objetivosEliminacion)
               {
@@ -67,21 +60,7 @@ public class Mision
                    estado = EstadoMision.Activa;
               }
           }
-
-
-
       }
-
-    /*    public void ActivarMision()
-       {
-           foreach (var objetivo in objetivos)
-           {
-               objetivo.Activar();
-           }
-           estado = EstadoMision.Activa;
-       }
-     */
-
 
     // Verifica si todos los objetivos de recolección están completos.
     public bool VerificarObjetivosCompletos()

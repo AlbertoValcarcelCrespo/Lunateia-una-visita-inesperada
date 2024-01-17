@@ -11,7 +11,6 @@ public class ObjetivoRecoleccion
     public int cantidadActual;
     public bool completado;
 
-    // Constructor (opcional, para inicializar valores fácilmente)
     public ObjetivoRecoleccion(string itemId, int cantidadRequerida)
     {
         this.itemId = itemId;
@@ -37,7 +36,6 @@ public class ObjetivoRecoleccion
             {
                 completado = true;
                 Debug.Log("Objetivo de recolección completado: " + recolectado.name);
-                // Lógica adicional para la finalización del objetivo.
             }
         }
     }

@@ -14,23 +14,11 @@ public class MenuInicial : MonoBehaviour
 
     void Start()
     {
-    //    PlayerController jugador = FindObjectOfType<PlayerController>();
-      //  if (jugador != null)// && jugador.salud.SaludActual <= 0)
-      //  {
-            //jugador.ReiniciarEstado();
-    //        Destroy(jugador);
 
-     //   }
     }
     void Update()
     {
-     //   PlayerController jugador = FindObjectOfType<PlayerController>();
-        //  if (jugador != null)// && jugador.salud.SaludActual <= 0)
-        //  {
-        //jugador.ReiniciarEstado();
-     //   Destroy(jugador);
 
-        //   }
     }
     public void NuevaPartida()
     {
@@ -41,8 +29,6 @@ public class MenuInicial : MonoBehaviour
             GameManager.instance.gameOn();
         }
         SceneManager.LoadScene("Casa_Xerdan");
-      //  DinoController.instance.gameObject.SetActive(true);
-
     }
     public void Salir()
     {
@@ -57,12 +43,9 @@ public class MenuInicial : MonoBehaviour
 
         if (data != null)
         {
-
-            
             SceneManager.LoadScene(data.scene);
             ConfigurarJuegoCargado(data);
             GameManager.instance.gameOn();
-            // El resto del código se ejecutará después de que la escena se cargue
         }
         else
         {
@@ -70,13 +53,11 @@ public class MenuInicial : MonoBehaviour
         }
     }
 
-    // Asegúrate de que este método se llame después de cargar la escena
     public void ConfigurarJuegoCargado(PlayerData data)
     {
         // Encuentra al jugador en la escena
         PlayerController jugador = FindObjectOfType<PlayerController>();
 
-        // Configura los datos del jugador
         if (jugador != null)
         {
 
@@ -87,7 +68,6 @@ public class MenuInicial : MonoBehaviour
                 GameManager.instance.gameOn();
             }
             DinoController.instance.gameObject.SetActive(true);
-            // Configura la posición del jugador y otros datos
         }
     }
 

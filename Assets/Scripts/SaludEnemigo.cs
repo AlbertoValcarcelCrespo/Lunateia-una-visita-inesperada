@@ -7,7 +7,6 @@ public class SaludEnemigo : MonoBehaviour
 {
     public int saludBase;
     private int saludActual;
-    //  public Transform barraSalud;
     public UnityEvent OnMorir;
 
     public int ModificadorSalud;
@@ -37,7 +36,6 @@ public class SaludEnemigo : MonoBehaviour
                 {
                     OnMorir.Invoke();
                 }
-                // Destroy(gameObject);
             }
         }
     }
@@ -47,11 +45,6 @@ public class SaludEnemigo : MonoBehaviour
     void Start()
     {
         SaludActual = salud;
-
-
-        //barraSalud = CanvaPers.insta.barraSalud;
-     //   ReiniciarSalud();
-
     }
 
 

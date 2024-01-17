@@ -50,7 +50,6 @@ public class Casilla : MonoBehaviour
             if (itemAlmacenado.UsarItem())
             {
                 ReducirStock(1);
-                //cantidadStock--;
             }
         }
     }

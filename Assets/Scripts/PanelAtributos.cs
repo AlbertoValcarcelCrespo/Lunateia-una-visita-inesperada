@@ -15,7 +15,6 @@ public class PanelAtributos : MonoBehaviour
 
     private void Awake()
     {
-        // Configura la instancia Singleton
         if (instance == null)
         {
             instance = this;
@@ -35,7 +34,6 @@ public class PanelAtributos : MonoBehaviour
 
     private void ActualizarReferenciasDelJugador()
     {
-        // Busca al jugador por etiqueta y obtén el componente PlayerController
         GameObject jugador = GameObject.FindGameObjectWithTag("Player");
         if (jugador != null)
         {
@@ -50,7 +48,6 @@ public class PanelAtributos : MonoBehaviour
 
     public void ActualizarTextoAtributos(Atributos atributos, Salud salud, NivelDeExperiencia nivelDeExperiencia)
     {
-        // Verifica que las referencias no sean null antes de acceder a ellas
         if (atributos != null && salud != null && nivelDeExperiencia != null)
         {
             txtNivel.text = nivelDeExperiencia.nivel.ToString();

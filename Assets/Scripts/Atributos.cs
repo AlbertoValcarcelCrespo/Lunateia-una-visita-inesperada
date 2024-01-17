@@ -9,12 +9,9 @@ public enum Atributo
     Salud
 }
 
-
 [CreateAssetMenu(menuName = "ScriptableObjects/Atributos")]
 public class Atributos : ScriptableObject
 {
-
-
 
     [SerializeField]
     private int velocidadBase;
@@ -24,16 +21,8 @@ public class Atributos : ScriptableObject
     private int velocidadModificador;
     private int ataqueModificador;
 
-   // private int velocidadModificador { get { return velocidadBase + velocidadModificador; } }
-   // private int ataqueModificador {  get {  return ataqueBase + ataqueModificador; } }
-
     public int velocidad { get { return velocidadBase + velocidadModificador; } }
     public int ataque { get { return ataqueBase + ataqueModificador; } }
-
-    //   public int maxHealth;
-    //  public int health;
-    //  public int exp;
-    // public int level;
 
     public void AumentarVelocidadBase(int cantidad)
     {
@@ -44,11 +33,6 @@ public class Atributos : ScriptableObject
     {
         ataqueBase += cantidad;
     }
-
-
-
-
-
 
     private void ModificarSalud(Salud salud, int Cantidad)
     {
@@ -65,10 +49,8 @@ public class Atributos : ScriptableObject
 
             GameManager.instance.jugador.GetComponent<Salud>().ModificadorSalud += equipo.salud;
         }
-
         PanelAtributos.instance.ActualizarTextoAtributos(this, GameManager.instance.jugador.GetComponent<Salud>(), GameManager.instance.jugador.GetComponent<NivelDeExperiencia>());
         GameManager.instance.jugador.GetComponent<Salud>().ActualizarBarraSalud();
-
     }
 
     private void ResetearModificadores()

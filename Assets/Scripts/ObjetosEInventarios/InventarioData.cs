@@ -22,6 +22,6 @@ public class ItemData
 {
     public string itemId;
     public int cantidad;
-    public string tipoItem; // Agregar un nuevo campo para almacenar el tipo de ítem
+    public string tipoItem; 
 
 }
